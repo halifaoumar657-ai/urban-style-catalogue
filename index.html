@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Découvrez la collection URBAN STYLE : vêtements, chaussures et accessoires tendance. Commandez facilement sur WhatsApp.">
+
+    <title>URBAN STYLE | Mode & Accessoires</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BARRE D'ANNONCE -->
+    <div class="announcement">
+        Nouvelle collection disponible — Découvrez nos nouveautés
+    </div>
+
+    <!-- EN-TÊTE -->
+    <header class="header">
+        <a href="#" class="logo">URBAN<span>STYLE.</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navigation" id="navigation">
+            <a href="#accueil">Accueil</a>
+            <a href="#produits">Nos produits</a>
+            <a href="#apropos">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#produits" class="header-button">Découvrir la collection ↗</a>
+    </header>
+
+    <main>
+
+        <!-- SECTION HERO -->
+        <section class="hero" id="accueil">
+            <div class="hero-content">
+                <span class="eyebrow">STYLE • QUALITÉ • AUTHENTICITÉ</span>
+
+                <h1>Affirmez votre style.<br><span>Vivez la différence.</span></h1>
+
+                <p>
+                    Découvrez une sélection de vêtements et d'accessoires
+                    pensés pour celles et ceux qui aiment se démarquer.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#produits" class="button button-dark">
+                        Explorer la collection →
+                    </a>
+
+                    <a href="#apropos" class="button button-light">
+                        Notre univers
+                    </a>
+                </div>
+
+                <div class="hero-details">
+                    <div>
+                        <strong>Style</strong>
+                        <span>Pour chaque occasion</span>
+                    </div>
+
+                    <div>
+                        <strong>Qualité</strong>
+                        <span>Une sélection soignée</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=85"
+                    alt="Boutique de vêtements moderne"
+                >
+
+                <div class="image-label">
+                    <span>COLLECTION</span>
+                    <strong>Nouvelle saison</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- AVANTAGES -->
+        <section class="benefits">
+            <div>✦ Sélection tendance</div>
+            <div>✦ Commande simple sur WhatsApp</div>
+            <div>✦ Prix affichés en FCFA</div>
+        </section>
+
+        <!-- PRODUITS -->
+        <section class="products-section" id="produits">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">NOTRE SÉLECTION</span>
+                    <h2>Les pièces <span>du moment.</span></h2>
+                    <p>Découvrez nos articles et trouvez votre prochain coup de cœur.</p>
+                </div>
+
+                <span class="product-count" id="productCount">8 articles</span>
+            </div>
+
+            <!-- RECHERCHE -->
+            <div class="catalogue-controls">
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Rechercher un produit..."
+                        aria-label="Rechercher un produit"
+                    >
+                </div>
+
+                <div class="category-filters" id="categoryFilters">
+                    <button class="filter-button active" data-category="Tous">Tout</button>
+                    <button class="filter-button" data-category="Vêtements">Vêtements</button>
+                    <button class="filter-button" data-category="Chaussures">Chaussures</button>
+                    <button class="filter-button" data-category="Accessoires">Accessoires</button>
+                </div>
+            </div>
+
+            <!-- GRILLE DYNAMIQUE -->
+            <div class="products-grid" id="productsGrid"></div>
+
+            <div class="empty-message" id="emptyMessage" hidden>
+                Aucun produit ne correspond à votre recherche.
+            </div>
+
+            <p class="demo-notice">
+                Catalogue de démonstration : les articles et les prix sont fictifs.
+            </p>
+        </section>
+
+        <!-- À PROPOS -->
+        <section class="about-section" id="apropos">
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=85"
+                    alt="Inspiration mode et shopping"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="about-content">
+                <span class="eyebrow">NOTRE UNIVERS</span>
+
+                <h2>La mode, à votre <span>image.</span></h2>
+
+                <p>
+                    URBAN STYLE est une boutique fictive créée pour présenter
+                    une expérience moderne de catalogue en ligne. Notre univers
+                    met en avant les tendances, la simplicité et le plaisir
+                    de trouver des pièces qui vous ressemblent.
+                </p>
+
+                <a href="#produits" class="button button-dark">
+                    Voir les produits →
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+            <span class="eyebrow">UNE QUESTION ?</span>
+
+            <h2>Un article vous intéresse ?</h2>
+
+            <p>
+                Contactez-nous sur WhatsApp pour demander des informations
+                sur un produit ou passer votre commande.
+            </p>
+
+            <a
+                href="https://wa.me/221770000000"
+                class="button button-light"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Nous contacter sur WhatsApp ↗
+            </a>
+
+            <p class="contact-note">
+                Numéro de démonstration : à remplacer par celui du commerçant.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer class="footer">
+        <a href="#accueil" class="logo">URBAN<span>STYLE.</span></a>
+
+        <p>Catalogue de démonstration réalisé pour une boutique de mode.</p>
+
+        <span>© <span id="currentYear"></span> URBAN STYLE</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
